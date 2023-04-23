@@ -1,0 +1,209 @@
+@charset "UTF-8";/*para acentuação das palavras*/
+
+body {
+	padding: 10px 10px;/*ESPAÇAMENTO DO ELEMENTO, SUA BORDA E CONTEÚDO*/
+	margin: 0 auto;/*ESPAÇO EXTERNO*/
+	font-size: 20px;
+	background: #BDC581;/*FUNDO INTERNO*/
+	font-style: italic;/*DEFINE O ESTILO DA FONTE*/
+	font-family: cursive, helvetica, sans-serif;/*VISUALIZAÇÃO EM TDS OS PC LEGÍVEL*/
+	font-style: italic;
+}
+header {
+	width: 100%;/*LARGURA*/
+	height: 100%;/*ALTURA*/
+	padding: 100%;
+	margin: 100%;
+	font-family: arial, sans-serif;
+	font-style: italic;
+
+}
+nav {
+	width: 100%;
+	height: 30px;
+	background: #ccae62;/*fundo menu*/
+	font-style: italic;
+	font-family: arial, sans-serif;
+	font-style: italic;
+}
+
+/* INICIO SLIDER*/
+.slider {
+	overflow: hidden;/*conteúdo é cortado sem barra de rolagem*/
+}
+.slider > .slider-content{
+	display: flex;
+	flex-wrap: nowrap;/*agrupar iten*/
+	width: 100%;/*LARGURA*/
+	transition: all 500ms ease;
+
+}
+.slider > .slider-content > .slider-item{
+	flex: 0 0 auto;
+}
+.slider > inpunt:nth-child(1):checked ~ .slider-content{
+	transform: translateX(0%);/*:nth-child a posição do type radio*/
+}
+.slider > input:nth-child(2):checked ~ .slider-content{
+	transform: translateX(-45%);/*MOVIMENTO AO ELEMENTO*/
+}
+/*FIM SLIDER*/
+
+/*INICIO MENU*/
+.menu li a:hover{
+	color: white;/*cor da letra do menu quando passa o mouse*/
+}/*HOVER DEFINIÇÃO DE PROPRIEDADE*/
+.menu li ul{
+	position: absolute;
+	top: 25px;
+	left: 0;
+	display: none;
+}
+.menu li:hover ul, .menu li.over ul {
+	display: block;
+}
+.menu li ul li {
+	border: 1px solid #c0c0c0;
+	display: block;
+	width: 150px;
+}
+.menu {
+	margin: 0px;/*controla o fora entre os botões*/
+	padding: 0px;/*espaço dentro do objeto que contém o objeto*/
+	width: auto;
+	height: 30px;
+	background: rgba(255,255,255,.2);/*fundo do menu*/
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;/*sombra na borda das img*/
+}
+.menu ul {
+	list-style: none;/*remover os marcadores*/
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+.menu li {
+	display: inline;
+	margin: 2px;
+	paddin: 10PX;
+	width: 200px;/*tamanho do menu*/
+	float: left;
+	border-left: #ffffff thin solid; /*barra de separação*/
+	background-color: rgba(255,255,255,.2);/*cor no fundo quando minimiza ajusta na pag*/
+}
+.menu li:hover {
+	background:green;/*muda a cor do menu quando passar o mause*/
+}
+.menu a {
+	color: #022619;/*cor das letras do menu*/
+	text-decoration: none;/*tirar o sublinhado do menu*/
+}
+/*FIM MENU*/
+
+section {
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.2);
+	font-family: arial, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+}
+.grão {
+	text-align: center;
+}
+.vida {
+	color: #141C09;
+	font-size: 40px;
+	font-weight: bolder;
+	text-decoration: underline;/*sublinhado*/
+	font-style: italic;
+	text-align: center;/*altera a diposição do texto*/
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+	font-family: arial, sans-serif;
+	font-style: italic;	
+	color: #141C09;
+}
+h1 {
+	text-align: center;
+	color: #141C09;
+}
+h1:hover {
+     color: #fff;
+     background-color: green;
+}/*AO PASSAR O MOUSE MUDA A COR*/
+
+h2 {
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #141C09;
+}
+h3 {
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #141C09;
+}
+figure img {
+	border: 8px solid white;/*forma para ter o mesmo estilo*/
+	box-shadow: 1px 1px 4px black;/*sombra na borda das img*/
+}
+figure img {
+	width: 90%;/*ajustar as imagens*/
+	height: 90%;/*tamanho das imagens*/
+	flexbox: centralizar;/*ORGANIZA O ELEMENTO DENTRO DA PÁG INDEPENDENTE DA DIMENSÃO*/
+	text-align: center;
+}
+#receita {
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #141C09;
+}
+#receita ul{
+	font-style: italic;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #141C09;	
+}
+#receita li {
+	text-align: center;
+	list-style: none;	
+	color: #141C09;
+}
+#video {
+	float: left;/*RETIRA DO LUGAR PARA POSICIONAR NO LADO DIREITO OU ESQUERDO*/
+}
+#lado {
+	position: relative;/*POSIÇÃO DO ELEMENTO EM RELAÇÃO A ELE MESMO*/
+	right: 0px;
+	width: 900px;
+	height: 100px;
+	color: #141C09;
+}
+#grãos {
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #141C09;
+}
+
+footer {
+	margin: 0;
+	padding: 0px 0px;
+	width: 100%;
+	height: 100%;
+	background: #BDC581;
+	padding-top: 20px;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
